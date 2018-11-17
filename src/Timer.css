@@ -1,0 +1,39 @@
+.divstyle2{
+   display: flex;
+   justify-content: space-between;
+   color: rgb(233, 227, 227);
+   font-size: 14px;
+}
+.divstyle1{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(59, 59, 59);
+    font-size: 35px;
+ }
+.divstyle{
+    margin-top: 1%;
+    margin-left: 1%;
+    padding: 1%;;
+    width: 200px;
+    height: 100px;
+    line-height: 2px;
+    position: relative;
+	
+	background-color: rgb(15, 115, 209); /*for compatibility with older browsers*/
+	background-image: linear-gradient(rgb(0, 98, 128),rgb(57, 201, 211));
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px -2px #333;
+    
+}
+.divstyle:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+.divstyle:hover{
+	background: linear-gradient(rgb(0, 115, 119),rgb(0, 247, 255));
+}
